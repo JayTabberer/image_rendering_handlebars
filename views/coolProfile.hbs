@@ -1,6 +1,11 @@
 <button><a href="http://localhost:3000/profile">Profile</a></button>
 
-<img src='http://localhost:3000/images/{{name}}' alt="uploadedimage">
+{{!-- <img src='http://localhost:3000/images/{{content}}' alt="uploadedimage"> --}}
 
 {{!-- find a way to access all file names in uploads module --}}
-{{!--  --}}
+
+{{#each content}}
+    <img src="{{this}}" alt="uploadedimage">
+{{/each}}
+
+
